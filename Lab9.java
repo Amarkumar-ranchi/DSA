@@ -1,17 +1,19 @@
-package com.myjlc.loops;
-
-//9.Find the Sum of  Numbers from 1 to N
+package com.myjlc.bitwise;
 
 public class Lab9 {
 
 	public static void main(String[] args) {
-int n=5;
+		
+		int a=50;
+		
+		System.out.println(a>>>1);
+System.out.println(a>>>2);	
+System.out.println(a>>>3);
 
-int sum=n*(n+1)/2;
-System.out.println("sum:"+sum);
-	
+int b=-50;
+System.out.println(b>>>1);
+System.out.println(b>>>2);
+System.out.println(b>>>3);
 	}
-}
 
-//Time complexity-O(1)
-// Space complexity-O(1)
+}

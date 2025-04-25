@@ -1,27 +1,26 @@
-package com.myjlc.loops;
-
-//4.Find Min and max of 2 Numbers
+package com.myjlc.bitwise;
 
 public class Lab4 {
 
 	public static void main(String[] args) {
-int a=10;
-int b=20;
+		
+		int a=9;
+		int b=13;
+		int c=25;
+		
+		int x=a^b;
+		int y=b^a;
+		
+		System.out.println(x==y);
 
-int min=(a<b)?a:b;
- System.out.println(min);
- 
- int max=0;
- 
-if(a>b)
-  max=a;
-else
-	max=b;
-System.out.println(max);
+	x=(a^b)^c;
+	y=a^(b^c);
+	System.out.println(x==y);
+	 
+	int p=5;
+	System.out.println(p^p);
+	System.out.println(p^0);
+	System.out.println(0^p);
 	}
 
 }
-
-//Time complexity-O(1)
-// Space complexity-O(1)
-// 1 is constant

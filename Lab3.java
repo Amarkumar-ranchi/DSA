@@ -1,24 +1,20 @@
-package com.myjlc.loops;
-
-//3.Swap 2 Strings
+package com.myjlc.bitwise;
 
 public class Lab3 {
 
 	public static void main(String[] args) {
-String str1="Hello";
-String str2="Guys";
+		
+		int a=3;
+		int b=6;
+		
+		int result=a^b;
+		System.out.println(result);
 
- System.out.println(str1+"\t"+str2);
- 
-String temp=str1;
-str1=str2;
-str2=temp;
+		boolean b1=true;
+		boolean b2=false;
+		
+	boolean myresult=b1^b2;
+	System.out.println(myresult);
+	}
 
-System.out.println(str1+"\t"+str2); 
 }
-
-}
-
-//Time complexity-O(1)
-// Space complexity-O(1)
-// 1 is constant

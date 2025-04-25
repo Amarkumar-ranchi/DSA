@@ -1,18 +1,14 @@
-package com.myjlc.loops;
-
-//6.Print the Numbers from 1 to N
+package com.myjlc.bitwise;
 
 public class Lab6 {
 
 	public static void main(String[] args) {
-int n=5;
-for(int i=1;i<=n;i++) {
-System.out.println(i);
+		
+		int a=6;
+		
+	System.out.println(a<<1);	
+	int b=-6;
+	System.out.println(b<<1);
 	}
-	}
-}
 
-//Time complexity-O(1)
-// Space complexity-O(1)
-// 1 is constant
-//n is Linear
+}

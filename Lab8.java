@@ -1,20 +1,19 @@
-package com.myjlc.loops;
-
-//8.Find the Sum of  Numbers from 1 to N
+package com.myjlc.bitwise;
 
 public class Lab8 {
 
 	public static void main(String[] args) {
-int n=6;
+		
+		int a=50;
+		
+		System.out.println(a>>1);
+System.out.println(a>>2);	
+System.out.println(a>>3);
 
-int sum=0;
-for(int i=1;i<=n;i++) {
-     sum=sum+i;
-} 
-System.out.println("sum:"+sum);
-	
+int b=-50;
+System.out.println(b>>1);
+System.out.println(b>>2);
+System.out.println(b>>3);
 	}
-}
 
-//Time complexity-O(6)
-// Space complexity-O(1)
+}
