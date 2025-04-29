@@ -1,24 +1,19 @@
-package com.myjlc.loops;
+package com.myjlc.bitwise;
 
-//1.Swap 2 Numbers
+//Problem 1:Find Whether Last bit is Set or Not
 
 public class Lab1 {
-
+	
 	public static void main(String[] args) {
-int a=10;
-int b=20;
-
- System.out.println(a+"\t"+b);
- 
-int temp=a;
-a=b;
-b=temp;
-
-System.out.println(a+"\t"+b); 
-}
+		
+		int n=19;
+		if((n & 1)!=0) {
+			System.out.println("Last Bit is  Set");
+		}else {
+			System.out.println("Last Bit is Not  Set");
+		}
+		}
 
 }
 
-//Time complexity-O(1)
-// Space complexity-O(1)
-// 1 is constant
+//Time Complexity-O(1)

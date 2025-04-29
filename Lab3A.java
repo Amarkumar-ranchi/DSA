@@ -2,16 +2,14 @@ package com.myjlc.bitwise;
 
 //Problem 3:Find Whether Kth bit is Set or Not
 //Position start from Right-Consider LSB as first bit
-public class Lab3 {
+public class Lab3A {
 	
 	public static void main(String[] args) {
 		
 		int n=26;
 		int k=3;
 		 
-		for(int i=1;i<=k;i++) 
-			n=n>>1;
-		 
+	n=n>>k-1;
 		if((n & 1)==0) {
 			System.out.println("kth Bit is Not set");
 		}else {

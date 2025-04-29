@@ -1,18 +1,14 @@
 package com.myjlc.bitwise;
 
 //Problem 5:Check Whether given Number is 2 Power or Not
-public class Lab5 {
+
+public class Lab5A {
 	
 	public static void main(String[] args) {
 		
-		int n=3;
-		int count=0;
+		int n=7;
 		
-		while(n>0) {
-	n=n&n-1;
-				count++;
-		}
-		if(count==1)
+		if((n&(n-1))==0)
 	System.out.println("2 Power");	
 	else 
 		System.out.println("Not a 2 Power");	
@@ -22,4 +18,4 @@ public class Lab5 {
 }
 
 
-//Time Complexity-O(31)
+//Time Complexity-O(1)

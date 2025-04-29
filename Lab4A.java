@@ -1,28 +1,26 @@
 package com.myjlc.bitwise;
 
 //Problem 4:Count the Set Bits
-//Visiting All the Bits and Counting the SetBits
-public class Lab4 {
+//Brain Kerningam Algorithm
+//Visiting only Set Bits and Counting the SetBits
+
+public class Lab4A {
 	
 	public static void main(String[] args) {
 		
-		int n=123456788;
+		int n=25;
 		int count=0;
 		int loopCount=0;
 		
 		while(n>0) {
-			loopCount++;
-			
-			if((n&1)==1)
+		n=n&n-1;
 				count++;
-			
-			n=n>>1;
+	
 		}
 	System.out.println("Set Bit Count:"+count);	
-	System.out.println("Loop Count:"+loopCount);	
 	
 	}
 }
 
 
-//Time Complexity-O(31)
+//Time Complexity-O(63)/O(1)

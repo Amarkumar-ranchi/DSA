@@ -1,20 +1,19 @@
 package com.myjlc.bitwise;
 
-public class Lab2 {
+//Problem 2:Find Whether Given Numbers Even or Odd
 
+public class Lab2 {
+	
 	public static void main(String[] args) {
 		
-		int a=3;
-		int b=6;
-		
-		int result=a|b;
-		System.out.println(result);
-
-		boolean b1=true;
-		boolean b2=true;
-		
-	boolean myresult=b1|b2;
-	System.out.println(myresult);
-	}
+		int n=2;
+		if((n & 1)==0) {
+			System.out.println("Number is Even");
+		}else {
+			System.out.println("Number is Odd");
+		}
+		}
 
 }
+
+//Time Complexity-O(1)
