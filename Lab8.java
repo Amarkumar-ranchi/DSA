@@ -1,19 +1,18 @@
-package com.myjlc.bitwise;
-
+package com.myjlc.recursion;
+//Problem 1 :Sum of Number from 1 to N
 public class Lab8 {
-
-	public static void main(String[] args) {
-		
-		int a=50;
-		
-		System.out.println(a>>1);
-System.out.println(a>>2);	
-System.out.println(a>>3);
-
-int b=-50;
-System.out.println(b>>1);
-System.out.println(b>>2);
-System.out.println(b>>3);
-	}
-
+static int sum(int n) {
+	if(n==1)
+		return 1;
+	else
+	 return n+sum(n-1);
+	
 }
+	public static void main(String[] args) {
+int sum=sum(5);
+System.out.println(sum);
+	}
+}
+
+//Time complexity:O(n)
+//space complexity:O(n)

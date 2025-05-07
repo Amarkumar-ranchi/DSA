@@ -1,20 +1,19 @@
-package com.myjlc.loops;
-
-//10.Find the Sum of Squares  Numbers from 1 to N
-
+package com.myjlc.recursion;
+//Problem 3 :Sum of Indiviual Digits of given number
+//n=123=>1+2+3=>6
 public class Lab10 {
-
-	public static void main(String[] args) {
-int n=6;
-
-int sum=0;
-for(int i=1;i<=n;i++) {
-     sum=sum+i*i;
-} 
-System.out.println("sum:"+sum);
+static int digitSum(int n) {
+	if(n==0)
+		return 0;
+	else
+	 return n%10+digitSum(n/10);
 	
+}
+	public static void main(String[] args) {
+int digitSum=digitSum(12345);
+System.out.println(digitSum);
 	}
 }
 
-//Time complexity-O(n)
-// Space complexity-O(1)
+//Time complexity:O(n)
+//space complexity:O(n)
