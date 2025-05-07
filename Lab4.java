@@ -1,28 +1,22 @@
-package com.myjlc.bitwise;
-
-//Problem 4:Count the Set Bits
-//Visiting All the Bits and Counting the SetBits
+package com.myjlc.recursion;
 public class Lab4 {
+static void show(int n) {
 	
-	public static void main(String[] args) {
-		
-		int n=123456788;
-		int count=0;
-		int loopCount=0;
-		
-		while(n>0) {
-			loopCount++;
-			
-			if((n&1)==1)
-				count++;
-			
-			n=n>>1;
-		}
-	System.out.println("Set Bit Count:"+count);	
-	System.out.println("Loop Count:"+loopCount);	
+	//Base Case
+	if(n==0)
+		return;
 	
-	}
+	//Recursive Call
+	show(n-1);
+	
+	//Task Logic
+		System.out.println("Welcome to Code World");
 }
+	public static void main(String[] args) {
+show(5);
 
+	}
 
-//Time Complexity-O(31)
+	
+
+}

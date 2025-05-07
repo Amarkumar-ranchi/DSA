@@ -1,25 +1,22 @@
-package com.myjlc.bitwise;
-
-//Problem 5:Check Whether given Number is 2 Power or Not
+package com.myjlc.recursion;
 public class Lab5 {
+static void show(int n) {
+	//Task Logic
+	System.out.println("Welcome to Code World");
 	
-	public static void main(String[] args) {
-		
-		int n=3;
-		int count=0;
-		
-		while(n>0) {
-	n=n&n-1;
-				count++;
-		}
-		if(count==1)
-	System.out.println("2 Power");	
-	else 
-		System.out.println("Not a 2 Power");	
+	//Base Case
+	if(n==1)
+		return;
 	
+	//Recursive Call
+	show(n-1);
 	
-	}
 }
+	public static void main(String[] args) {
+show(5);
 
+	}
 
-//Time Complexity-O(31)
+	
+
+}

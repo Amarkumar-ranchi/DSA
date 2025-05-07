@@ -1,23 +1,19 @@
-package com.myjlc.bitwise;
-
-//Problem 3:Find Whether Kth bit is Set or Not
-//Position start from Right-Consider LSB as first bit
+package com.myjlc.recursion;
 public class Lab3 {
-	
-	public static void main(String[] args) {
-		
-		int n=26;
-		int k=3;
-		 
-		for(int i=1;i<=k;i++) 
-			n=n>>1;
-		 
-		if((n & 1)==0) {
-			System.out.println("kth Bit is Not set");
-		}else {
-			System.out.println("kth Bit is set");
-		}
-		}
+static void show(int n) {
+	//Base Case
+	if(n==0)
+		return;
+	//Task Logic
+	System.out.println("Welcome to Code World");
+	//Recursive Call
+	show(n-1);
 }
+	public static void main(String[] args) {
+show(5);
 
-//Time Complexity-O(k)
+	}
+
+	
+
+}

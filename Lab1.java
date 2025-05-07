@@ -1,19 +1,29 @@
-package com.myjlc.bitwise;
-
-//Problem 1:Find Whether Last bit is Set or Not
-
-public class Lab1 {
-	
-	public static void main(String[] args) {
-		
-		int n=19;
-		if((n & 1)!=0) {
-			System.out.println("Last Bit is  Set");
-		}else {
-			System.out.println("Last Bit is Not  Set");
-		}
-		}
-
+package com.myjlc.recursion;
+/*class Hello{
+void m1(int x) {
+System.out.println("m1-begin");
+int a=10;
+System.out.println(a);
+m2(x+a);
+System.out.println("m1-end");
 }
 
-//Time Complexity-O(1)
+void m2(int y ) {
+System.out.println("m2-begin");
+int b=20;
+System.out.println(b);
+System.out.println("m2-end");
+}
+}
+public class Lab1 {
+
+	public static void main(String[] args) {
+		System.out.println("main-begin");
+		Hello h=new Hello();
+		int p=50;
+		h.m1(p);
+		System.out.println("main-end");
+
+	}
+
+}*/

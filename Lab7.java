@@ -1,19 +1,24 @@
-package com.myjlc.bitwise;
+package com.myjlc.recursion;
+//Problem 2:print the Number from 1 to N
 
 public class Lab7 {
-
+static void printNums(int n) {
+	//Base Case
+	if(n==0)
+		return;
+	
+	//Recursive Call
+	printNums(n-1);
+	
+	//Task Logic
+	System.out.println(n);
+	
+}
 	public static void main(String[] args) {
-		
-		
-		int a=6;
-		
-		int x=a<<5;
-	System.out.println(x);	
+printNums(9);
 
-	for(int i=1;i<=5;i++) {
-		a=a<<1;
 	}
-System.out.println(a);	
-	}
+
+	
 
 }

@@ -1,19 +1,15 @@
-package com.myjlc.bitwise;
-
-//Problem 2:Find Whether Given Numbers Even or Odd
-
+package com.myjlc.recursion;
 public class Lab2 {
-	
+static void show() {
+	System.out.println("show-begin");
+	show();
+	System.out.println("show-end");
+}
 	public static void main(String[] args) {
-		
-		int n=2;
-		if((n & 1)==0) {
-			System.out.println("Number is Even");
-		}else {
-			System.out.println("Number is Odd");
-		}
-		}
+show();
+
+	}
+
+	
 
 }
-
-//Time Complexity-O(1)
