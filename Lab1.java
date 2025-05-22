@@ -1,29 +1,27 @@
-package com.myjlc.recursion;
-/*class Hello{
-void m1(int x) {
-System.out.println("m1-begin");
-int a=10;
-System.out.println(a);
-m2(x+a);
-System.out.println("m1-end");
-}
+package com.jlcindia.arrays;
 
-void m2(int y ) {
-System.out.println("m2-begin");
-int b=20;
-System.out.println(b);
-System.out.println("m2-end");
-}
-}
 public class Lab1 {
 
 	public static void main(String[] args) {
-		System.out.println("main-begin");
-		Hello h=new Hello();
-		int p=50;
-		h.m1(p);
-		System.out.println("main-end");
-
+//1.create the 	Arrays
+		int arr[]=new int[6];
+		//2.Find the Length of Array
+		int size=arr.length;
+		System.out.println(size);
+		
+		//3.Accessing Elements
+		for(int i=0;i<size;i++)
+			System.out.println(arr[i]);
+		//4.Assign the Values
+		arr[0]=10;
+		arr[1]=20;
+		arr[2]=30;
+		arr[3]=40;
+		arr[4]=50;
+		arr[5]=60;
+		//5.Accessing Elements
+for(int x:arr)
+	System.out.println(x);
 	}
 
-}*/
+}

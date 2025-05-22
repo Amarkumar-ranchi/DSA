@@ -1,19 +1,23 @@
-package com.myjlc.recursion;
+package com.jlcindia.arrays;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Lab3 {
-static void show(int n) {
-	//Base Case
-	if(n==0)
-		return;
-	//Task Logic
-	System.out.println("Welcome to Code World");
-	//Recursive Call
-	show(n-1);
-}
+
 	public static void main(String[] args) {
-show(5);
-
+//1.create the 	ArrayList
+		ArrayList<Integer>mylist=new ArrayList<Integer>();
+		
+		mylist.add(10);
+		mylist.add(20);
+		mylist.add(30);
+		mylist.add(40);
+		mylist.add(50);
+		System.out.println(mylist.contains(99));
+		for(int x:mylist) {
+		System.out.println(x);
+		}
 	}
-
-	
 
 }
