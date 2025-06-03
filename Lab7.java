@@ -1,6 +1,6 @@
 package com.myjlc.recursion;
 //Problem 2:print the Number from 1 to N
-
+//Non-Tail Recursion
 public class Lab7 {
 static void printNums(int n) {
 	//Base Case
